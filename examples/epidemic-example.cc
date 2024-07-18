@@ -210,7 +210,7 @@ int main (int argc, char *argv[])
 
   WifiMacHelper wifiMac;
   wifiMac.SetType ("ns3::AdhocWifiMac");
-  YansWifiPhyHelper wifiPhy = YansWifiPhyHelper::Default ();
+  YansWifiPhyHelper wifiPhy;// = YansWifiPhyHelper::Default ();
   YansWifiChannelHelper wifiChannel = YansWifiChannelHelper::Default ();
 
   wifiChannel.AddPropagationLoss ("ns3::RangePropagationLossModel",
